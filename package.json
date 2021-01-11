@@ -1,6 +1,6 @@
 {
-  "name": "html-to-docx",
-  "version": "1.1.32",
+  "name": "html-to-docx-buffer",
+  "version": "0.1.0",
   "description": "HTML to DOCX converter",
   "keywords": [
     "html",
@@ -22,18 +22,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/privateOmega/html-to-docx.git"
+    "url": "git+https://github.com/jmsv/html-to-docx-buffer.git"
   },
-  "author": "privateOmega <privateOmega@protonmail.com>",
+  "author": "James Vickery <dev@jmsv.me>",
   "contributors": [
+    "privateOmega <privateOmega@protonmail.com>",
     "amrita-syn <amrita.yadav@synapsica.com>",
     "charuthaB <charutha.bhaskar@synapsica.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/privateOmega/html-to-docx/issues"
+    "url": "https://github.com/jmsv/html-to-docx-buffer/issues"
   },
-  "homepage": "https://github.com/privateOmega/html-to-docx#readme",
+  "homepage": "https://github.com/jmsv/html-to-docx-buffer",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -58,11 +59,10 @@
     "standard-version": "^8.0.0"
   },
   "dependencies": {
+    "buffer-image-size": "^0.6.4",
     "color-name": "^1.1.4",
     "escape-html": "^1.0.3",
-    "html-minifier": "^4.0.0",
     "html-to-vdom": "^0.7.0",
-    "image-size": "^0.8.3",
     "jszip": "^3.5.0",
     "virtual-dom": "^2.1.1",
     "xmlbuilder2": "2.1.2"
@@ -74,7 +74,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
@@ -84,5 +83,6 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "typings": "definitions/index.d.ts"
 }

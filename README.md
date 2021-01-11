@@ -1,5 +1,18 @@
-html-to-docx
-============
+# html-to-docx-buffer
+
+> This is a fork of [html-to-docx](https://github.com/privateOmega/html-to-docx) with an aim to make it more portable. Dependencies relying on Node's `fs` have been removed/replaced, making it possible to use this library client-side: e.g. downloading a page as `docx` straight from the browser.
+
+Credit to [privateOmega](https://github.com/privateOmega) for the original library.
+
+## Changelog
+
+### 0.1.0
+
+Initial version, based on [html-to-docx](html-to-docx) 1.1.32 with changes to remove Node dependencies.
+
+Also added TS typings
+
+---
 
 [![NPM Version][npm-image]][npm-url]
 
@@ -20,7 +33,7 @@ npm install html-to-docx
 ## Usage
 
 ```js
-await HTMLtoDOCX(htmlString, headerHTMLString, documentOptions, footerHTMLString)
+await HTMLtoDOCX(htmlString, headerHTMLString, documentOptions, footerHTMLString);
 ```
 
 full fledged examples can be found under `example/`
@@ -79,22 +92,22 @@ Please make sure to update tests as appropriate.
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/html-to-docx.svg
-[npm-url]: https://npmjs.org/package/html-to-docx
-[html-docx-js]: https://github.com/evidenceprime/html-docx-js "html-docx-js"
-[altchunks]: https://docs.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.altchunk?view=openxml-2.8.1 "altchunks"
-[libtidy]: https://github.com/jure/node-libtidy "libtidy"
-[String]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type "String"
-[Object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object "Object"
-[Number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type "Number"
-[TWIP]: https://en.wikipedia.org/wiki/Twip "TWIP"
-[Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array "Array"
-[Date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "Date"
-[Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type "Boolean"
-[Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise "Promise"
-[Buffer]: https://nodejs.org/api/buffer.html#buffer_buffer "Buffer"
-[Blob]: https://developer.mozilla.org/en-US/docs/Web/API/Blob "Blob"
-[pixel]: https://en.wikipedia.org/wiki/Pixel#:~:text=Pixels%2C%20abbreviated%20as%20%22px%22,what%20screen%20resolution%20views%20it. "pixel"
-[cm]: https://en.wikipedia.org/wiki/Centimetre "cm"
-[inch]: https://en.wikipedia.org/wiki/Inch "inch"
-[pt]: https://en.wikipedia.org/wiki/Point_(typography) "pt"
+[npm-image]: https://img.shields.io/npm/v/html-to-docx-buffer.svg
+[npm-url]: https://npmjs.org/package/html-to-docx-buffer
+[html-docx-js]: https://github.com/evidenceprime/html-docx-js 'html-docx-js'
+[altchunks]: https://docs.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.altchunk?view=openxml-2.8.1 'altchunks'
+[libtidy]: https://github.com/jure/node-libtidy 'libtidy'
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type 'String'
+[object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object 'Object'
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type 'Number'
+[twip]: https://en.wikipedia.org/wiki/Twip 'TWIP'
+[array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 'Array'
+[date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date 'Date'
+[boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type 'Boolean'
+[promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 'Promise'
+[buffer]: https://nodejs.org/api/buffer.html#buffer_buffer 'Buffer'
+[blob]: https://developer.mozilla.org/en-US/docs/Web/API/Blob 'Blob'
+[pixel]: https://en.wikipedia.org/wiki/Pixel#:~:text=Pixels%2C%20abbreviated%20as%20%22px%22,what%20screen%20resolution%20views%20it. 'pixel'
+[cm]: https://en.wikipedia.org/wiki/Centimetre 'cm'
+[inch]: https://en.wikipedia.org/wiki/Inch 'inch'
+[pt]: https://en.wikipedia.org/wiki/Point_(typography) 'pt'

@@ -12,7 +12,7 @@ const VText = require('virtual-dom/vnode/vtext');
 const isVNode = require('virtual-dom/vnode/is-vnode');
 const isVText = require('virtual-dom/vnode/is-vtext');
 const escape = require('escape-html');
-const sizeOf = require('image-size');
+const sizeOf = require('buffer-image-size');
 
 const convertHTML = require('html-to-vdom')({
   VNode,
