@@ -55,8 +55,7 @@
     "prettier": "^2.0.5",
     "rollup": "^2.18.2",
     "rollup-plugin-cleaner": "^1.0.0",
-    "rollup-plugin-terser": "^6.1.0",
-    "standard-version": "^8.0.0"
+    "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
     "buffer-image-size": "^0.6.4",
