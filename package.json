@@ -2,6 +2,9 @@
   "name": "html-to-docx-buffer",
   "version": "0.1.1",
   "description": "HTML to DOCX converter",
+  "typings": "definitions/index.d.ts",
+  "main": "dist/html-to-docx.cjs.js",
+  "module": "dist/html-to-docx.esm.js",
   "keywords": [
     "html",
     "docx",
@@ -10,34 +13,40 @@
     "office",
     "word"
   ],
-  "main": "dist/html-to-docx.cjs.js",
-  "module": "dist/html-to-docx.esm.js",
   "scripts": {
     "test": "npm run build && node example/example-node.js",
-    "release": "npm run build && npm deploy",
+    "release": "run-s build deploy",
     "lint": "eslint --fix .",
-    "prettier:check": "prettier --check '**/*.{js}'",
+    "prettier:check": "prettier --check \"{.,src,example,definitions}/**/*.{js,ts}\"",
+    "prettier:write": "prettier --write ./*.js \"{.,src,example,definitions}/**/*.{js,ts}\"",
     "validate": "run-s lint prettier:check",
     "build": "rollup -c"
   },
+  "license": "MIT",
+  "author": "James Vickery <dev@jmsv.me>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jmsv/html-to-docx-buffer.git"
   },
-  "author": "James Vickery <dev@jmsv.me>",
   "contributors": [
     "privateOmega <privateOmega@protonmail.com>",
     "amrita-syn <amrita.yadav@synapsica.com>",
     "charuthaB <charutha.bhaskar@synapsica.com>"
   ],
-  "license": "MIT",
+  "homepage": "https://github.com/jmsv/html-to-docx-buffer",
   "bugs": {
     "url": "https://github.com/jmsv/html-to-docx-buffer/issues"
   },
-  "homepage": "https://github.com/jmsv/html-to-docx-buffer",
+  "dependencies": {
+    "buffer-image-size": "^0.6.4",
+    "color-name": "^1.1.4",
+    "escape-html": "^1.0.3",
+    "html-to-vdom": "^0.7.0",
+    "jszip": "^3.5.0",
+    "virtual-dom": "^2.1.1",
+    "xmlbuilder2": "2.1.2"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
@@ -57,20 +66,6 @@
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-terser": "^6.1.0"
   },
-  "dependencies": {
-    "buffer-image-size": "^0.6.4",
-    "color-name": "^1.1.4",
-    "escape-html": "^1.0.3",
-    "html-to-vdom": "^0.7.0",
-    "jszip": "^3.5.0",
-    "virtual-dom": "^2.1.1",
-    "xmlbuilder2": "2.1.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -82,6 +77,5 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "typings": "definitions/index.d.ts"
+  }
 }
