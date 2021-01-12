@@ -6,6 +6,10 @@ Credit to [privateOmega](https://github.com/privateOmega) for the original libra
 
 ## Changelog
 
+### 0.1.1
+
+Typings fix
+
 ### 0.1.0
 
 Initial version, based on [html-to-docx](html-to-docx) 1.1.32 with changes to remove Node dependencies.

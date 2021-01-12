@@ -1,9 +1,9 @@
 declare module 'html-to-docx-buffer' {
   export default function htmlToDocx(
     htmlString: string,
-    headerHTMLString?: string,
+    headerHTMLString?: string | undefined,
     documentOptions?: DocumentOptions = {},
-    footerHTMLString?: string
+    footerHTMLString?: string | undefined
   ): Promise<Buffer | Blob>;
 }
 
@@ -40,5 +40,4 @@ interface DocumentOptions {
     };
   };
   pageNumber?: boolean;
-  footerHTMLString?: string;
 }
