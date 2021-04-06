@@ -4,6 +4,8 @@
 
 Credit to [privateOmega](https://github.com/privateOmega) for the original library.
 
+> ⚠️ This fork was built as a proof-of-concept and not considered production ready
+
 ## Changelog
 
 ### 0.1.1
