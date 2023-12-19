@@ -1,6 +1,6 @@
 {
   "name": "html-to-docx-buffer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "HTML to DOCX converter",
   "typings": "definitions/index.d.ts",
   "main": "dist/html-to-docx.cjs.js",
@@ -31,7 +31,9 @@
   "contributors": [
     "privateOmega <privateOmega@protonmail.com>",
     "amrita-syn <amrita.yadav@synapsica.com>",
-    "charuthaB <charutha.bhaskar@synapsica.com>"
+    "charuthaB <charutha.bhaskar@synapsica.com>",
+    "andreeapurta <andreea.purta@gmail.com>"
+
   ],
   "homepage": "https://github.com/jmsv/html-to-docx-buffer",
   "bugs": {

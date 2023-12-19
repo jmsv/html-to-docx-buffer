@@ -322,7 +322,7 @@ const buildTextFormatting = (vNode) => {
       const subscriptFragment = buildVertAlign('subscript');
       return subscriptFragment;
     case 'sup':
-      const superscriptFragment = buildVertAlign('subscript');
+      const superscriptFragment = buildVertAlign('superscript');
       return superscriptFragment;
     case 'mark':
       const highlightFragment = buildHighlight();
