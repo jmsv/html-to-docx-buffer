@@ -1,5 +1,5 @@
 {
-  "name": "html-to-docx-buffer-sup-sub",
+  "name": "@andreeapurta/html-to-docx-buffer-sup-sub",
   "version": "0.1.2",
   "description": "HTML to DOCX converter",
   "typings": "definitions/index.d.ts",
