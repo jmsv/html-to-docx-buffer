@@ -3,8 +3,8 @@
   "version": "0.1.2",
   "description": "HTML to DOCX converter",
   "typings": "definitions/index.d.ts",
-  "main": "./dist/html-to-docx.cjs.js",
-  "module": "./dist/html-to-docx.esm.js",
+  "main": "dist/html-to-docx.cjs.js",
+  "module": "dist/html-to-docx.esm.js",
   "keywords": [
     "html",
     "docx",
